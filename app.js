@@ -49,11 +49,11 @@ app.post("/", (req, res) => {
     })
   })
 
-  // request.write(jsonData)
+  request.write(jsonData)
   request.end()
 
 });
 
 // audience id
 
-app.listen(port, () => console.log(`Server running on port ${port} 🔥`));
+app.listen(port, () => console.log(`Server running on port ${port}`));
